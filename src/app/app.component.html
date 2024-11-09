@@ -1,0 +1,128 @@
+<div>
+  <mat-toolbar class="nav-container">
+    <mat-toolbar-row>
+      <div class="logo">
+        <a routerLink="/" class="d-inline-block">
+          <img
+            src="assets/images/logo/fin-dev-logo.svg"
+            width="100"
+            height="70"
+            alt="FindDev"
+        /></a>
+      </div>
+      <span class="menu-spacer"></span>
+      <button
+        class="burger"
+        mat-icon-button
+        (click)="sidenav.toggle()"
+        fxShow="true"
+        fxHide.gt-sm
+      >
+        <mat-icon svgIcon="menu-mobile">menu</mat-icon>
+      </button>
+      <div class="menu-items-container" fxShow="true" fxHide.lt-md>
+        <div class="menu-items">
+          <ng-container *ngFor="let tab of tabs">
+            <a
+              routerLinkActive="active"
+              mat-button
+              [routerLink]="tab.path"
+              (mouseenter)="closeMenu()"
+              *ngIf="!tab.hidden; else hiddenTab"
+            >
+              {{ tab.title | translate }}
+            </a>
+            <ng-template #hiddenTab>
+              <div
+                class="service-container"
+                [matMenuTriggerFor]="locationMenu"
+                (menuOpened)="isOpened()"
+                (menuClosed)="isClosed()"
+                #menuTrigger
+                (mouseenter)="openMenu()"
+              >
+                <a class="btn-with-icon" routerLinkActive="active" mat-button>
+                  {{ tab.title | translate }}
+                  <mat-icon
+                    class="expand"
+                    svgIcon="{{ isMenuOpen() ? 'expand-less' : 'expand-more' }}"
+                  ></mat-icon>
+                </a>
+              </div>
+            </ng-template>
+          </ng-container>
+          <app-language-selector></app-language-selector>
+        </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-menu #locationMenu="matMenu">
+    <mat-nav-list (mouseleave)="closeMenu()">
+      <a
+        mat-list-item
+        *ngFor="let subTab of serviceTabs"
+        [routerLink]="subTab.path"
+      >
+        {{ subTab.title | translate }}
+      </a>
+    </mat-nav-list>
+  </mat-menu>
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav class="sidenav" #sidenav position="end" [autoFocus]="false">
+      <mat-nav-list class="menu-item">
+        <ng-container *ngFor="let tab of tabs">
+          <a
+            routerLinkActive="active"
+            #rla="routerLinkActive"
+            mat-list-item
+            *ngIf="tab.path !== 'services'; else serviceTab"
+            (click)="tabClicked()"
+            [routerLink]="tab.path"
+          >
+            <span class="menu-item" [class.active]="rla.isActive">
+              {{ tab.title | translate }}
+            </span>
+          </a>
+          <ng-template #serviceTab>
+            <div class="service-mobile-container">
+              <a
+                routerLinkActive="active"
+                #rla="routerLinkActive"
+                mat-list-item
+                (click)="toggleServiceTabs()"
+              >
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ tab.title | translate }}
+                </span>
+              </a>
+              <mat-icon
+                svgIcon="{{ showServiceTabs ? 'expand-less' : 'expand-more' }}"
+              ></mat-icon>
+            </div>
+
+            <ng-container *ngIf="showServiceTabs">
+              <a
+                routerLinkActive="active"
+                #rla="routerLinkActive"
+                class="menu-item"
+                mat-list-item
+                class="sub-service-container"
+                (click)="tabClicked()"
+                *ngFor="let subTab of serviceTabs"
+                [routerLink]="subTab.path"
+              >
+                <span class="menu-item" [class.active]="rla.isActive">
+                  {{ subTab.title | translate }}
+                </span>
+              </a>
+            </ng-container>
+          </ng-template>
+        </ng-container>
+        <app-language-selector style="margin-left: 5px"></app-language-selector>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

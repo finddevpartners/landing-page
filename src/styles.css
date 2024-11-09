@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/custom-styles/custom-styles-services.css');
+
+:root {
+  --main-color: #1ac4ff; 
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-snack-bar-container.error-message .mdc-snackbar__label {
+  color: red !important;
+  font-size: 15px !important;
+}
+
+.mat-mdc-snack-bar-container.success-message .mdc-snackbar__label {
+  color: white !important;
+}
+
+.mat-mdc-menu-panel {
+  background-color: whitesmoke !important;
+}
+
+.findev-icon {
+  width: 70px !important;
+  height: 70px !important;
+  fill: var(--main-color) !important;
+}
+
+.findev-icon-sm {
+  width: 50px !important;
+  height: 50px !important;
+  fill: var(--main-color) !important;
+}
+
+.findev-icon-social {
+  width: 40px !important;
+  height: 50px !important;
+  fill: var(--main-color) !important;
+}
+
+.findev-icon-social-linkedin {
+  width: 50px !important;
+  height: 50px !important;
+  fill: var(--main-color) !important;
+}

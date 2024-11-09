@@ -1,0 +1,237 @@
+<!--
+<div class="slider-area position-relative home3 over-hidden home3 primary-bg">
+  <div
+    class="header single-slider d-flex align-items-center position-relative z-index11"
+  >
+    <div class="container">
+      <div class="row align-items-center">
+        <div
+          class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
+        >
+          <div class="slider-content position-relative z-index11">
+            <span class="f-700 theme-color d-block pb-1">{{
+              "APP.CONTACT.YOUR_TECH_PARTNER" | translate
+            }}</span>
+            <h1 class="f-700 pb-22 pr-0">
+              {{ "APP.CONTACT.TALENTED_TEAM" | translate }}
+            </h1>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div
+            class="home3-about-img-wrapper-margin mb-10 m-top d-flex justify-content-end"
+          >
+            <div
+              class="home3-about-img bg-transparent tilt position-relative z-index11"
+            >
+              <img
+                class="about-img1 position-absolute d-inline-block z-index1"
+                src="assets/images/contacts/contact-us-main.png"
+                alt="image"
+              />
+              <div
+                class="home3-about-img-border bg-transparent z-index-1"
+              ></div>
+            </div>
+          </div>
+        </div>
+        
+        <div
+          class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
+        >
+          <div class="slider-img1 pl-65 z-index1 position-relative">
+            <img
+              class="about-img1 position-absolute d-inline-block z-index1"
+              src="assets/images/contacts/contact-us-main.png"
+              alt="image"
+            />
+           <app-matrix-rain
+              [fromContact]="true"
+              [fromHome]="false"
+              givenWord="CONTACT US"
+            ></app-matrix-rain>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div class="primary-bg about-us-about-area pt-200 over-hidden">
+  <div class="container">
+    <div class="row align-items-start justify-content-center">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="about-us-left-content mb-65">
+          <div class="slider-content position-relative z-index11">
+            <span class="f-700 theme-color d-block pb-1">{{
+              "APP.CONTACT.YOUR_TECH_PARTNER" | translate
+            }}</span>
+            <h1 class="f-700 pb-22 pr-0">
+              {{ "APP.CONTACT.TALENTED_TEAM" | translate }}
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5 offset-lg-1 col-lg-5 col-md-9 col-sm-12 col-12">
+        <div
+          class="about-us-img-wrapper mt-18 mb-100 d-flex justify-content-end ml-100"
+        >
+          <div
+            class="home3-about-img contact-us-container-main-image bg-transparent position-relative z-index11 tilt"
+          >
+            <img
+              class="about-us-img1 about-us-main-image d-inline-block z-index-1"
+              src="assets/images/contacts/contact-us-main.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact-area-container row">
+  <div class="col-12 col-md-6 flexer">
+    <mat-card class="mat-card-container">
+      <mat-card-header class="full-w">
+        <mat-card-title>{{
+          "APP.CONTACT.WHERE_TO_FIND_US" | translate
+        }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="contact-info-container">
+          <div class="contact-info-container-col">
+            <mat-icon svgIcon="location" class="findev-icon-sm"></mat-icon>
+            <div>
+              <h4>{{ "APP.CONTACT.LOCATION" | translate }}</h4>
+              <div class="location-text">
+                {{ "APP.CONTACT.STREET" | translate }} Rezidenca Kodra e
+                diellit, Tirana, Albania
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-container-col">
+            <mat-icon svgIcon="email" class="findev-icon-sm"></mat-icon>
+            <div>
+              <h4>{{ "APP.CONTACT.EMAIL" | translate }}</h4>
+              <div>
+                <a href="mailto:partners@finddev.net">
+                  partners&#64;finddev.net
+                </a>
+              </div>
+            </div>
+          </div>
+          Beje me social networks para linkedinit TODO
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contact-area-container-social-media"
+          >
+            <a href="https://www.linkedin.com/company/finddev-partners">
+              <mat-icon
+                svgIcon="linkedin"
+                class="findev-icon-social-linkedin"
+              ></mat-icon
+            ></a>
+
+            <!-- <a href="#"
+              ><mat-icon
+                svgIcon="facebook"
+                class="findev-icon-social"
+              ></mat-icon
+            ></a> -->
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 col-md-6 flexer">
+    <mat-card class="mat-card-container">
+      <mat-card-header>
+        <mat-card-title>{{
+          "APP.CONTACT.FILL_FORM" | translate
+        }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="form">
+          <mat-form-field>
+            <mat-label>{{ "APP.CONTACT.NAME" | translate }}</mat-label>
+            <input matInput formControlName="name" />
+            <mat-icon
+              *ngIf="nameControl.enabled && nameControl.value"
+              class="clear-btn"
+              (click)="nameControl.setValue('')"
+              svgIcon="clear"
+            >
+            </mat-icon>
+            @if (nameControl.invalid) {
+              <mat-error>{{ getErrorName() }}</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>{{ "APP.CONTACT.EMAIL" | translate }}</mat-label>
+            <input matInput formControlName="email" />
+            <mat-icon
+              *ngIf="emailControl.enabled && emailControl.value"
+              class="clear-btn"
+              (click)="emailControl.setValue('')"
+              svgIcon="clear"
+            >
+            </mat-icon>
+            @if (emailControl.invalid) {
+              <mat-error>{{ getErrorEmail() }}</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>{{ "APP.CONTACT.PHONE" | translate }}</mat-label>
+            <input matInput formControlName="phone" />
+            <mat-icon
+              *ngIf="phoneControl.enabled && phoneControl.value"
+              class="clear-btn"
+              (click)="phoneControl.setValue('')"
+              svgIcon="clear"
+            >
+            </mat-icon>
+            <mat-hint>{{ "APP.CONTACT.PREFIX" | translate }}</mat-hint>
+            @if (phoneControl.invalid) {
+              <mat-error>{{ getPhoneErrorMessage() }}</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>{{ "APP.CONTACT.MESSAGE" | translate }}</mat-label>
+            <textarea
+              matInput
+              rows="8"
+              cols="60"
+              formControlName="message"
+            ></textarea>
+            <mat-icon
+              *ngIf="messageControl.enabled && messageControl.value"
+              class="clear-btn"
+              (click)="messageControl.setValue('')"
+              svgIcon="clear"
+            >
+            </mat-icon>
+            <mat-hint>{{ "APP.CONTACT.MIN_MAX" | translate }}</mat-hint>
+            @if (messageControl.invalid) {
+              <mat-error>{{ getErrorMessage() }}</mat-error>
+            }
+          </mat-form-field>
+        </form>
+      </mat-card-content>
+      <mat-card-actions class="">
+        <button
+          class="submit-button"
+          type="submit"
+          [class.submit-button-invalid]="form.pristine || form.invalid"
+          mat-raised-button
+          (click)="onSubmit()"
+          [disabled]="form.pristine || form.invalid"
+        >
+          {{ "APP.CONTACT.SUBMIT" | translate }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<app-footer></app-footer>

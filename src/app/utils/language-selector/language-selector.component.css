@@ -1,0 +1,22 @@
+.flag-icon {
+  width: 23px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.selected-flag {
+  width: 46px;
+  height: 40px;
+}
+
+.flag-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.801) !important;
+  border: none;
+}
+
+.mat-button-toggle {
+  background-color: rgba(245, 245, 245, 0.801) !important;
+}

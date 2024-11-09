@@ -1,0 +1,32 @@
+.header {
+  height: 600px !important;
+}
+
+.findev-card {
+  min-height: 630px;
+}
+
+.findev-card-service {
+  min-height: 500px;
+}
+.single-partner {
+  width: 200px;
+  opacity: 0.5;
+}
+
+.single-partner img {
+  width: 100% !important; /* Adjust to match the display size */
+  height: auto !important;
+}
+
+.single-partner-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.video-main {
+  width: 80%;
+  max-width: 800px;
+  height: 30%;
+  background-color: transparent;
+}

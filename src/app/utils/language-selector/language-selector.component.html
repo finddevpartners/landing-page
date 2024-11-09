@@ -1,0 +1,33 @@
+<mat-button-toggle-group
+  *ngIf="selectedLanguage"
+  name="languageToggle"
+  aria-label="Language"
+  (change)="changeLanguage($event)"
+  [value]="selectedLanguage"
+  class="flag-group"
+>
+  <mat-button-toggle value="en">
+    <img
+      src="assets/images/languages/uk-flag.png"
+      alt="UK"
+      class="flag-icon"
+      [class.selected-flag]="isSelected(LanguageEnum.EN)"
+    />
+  </mat-button-toggle>
+  <mat-button-toggle value="de">
+    <img
+      src="assets/images/languages/de-flag.png"
+      alt="DE"
+      class="flag-icon"
+      [class.selected-flag]="isSelected(LanguageEnum.DE)"
+    />
+  </mat-button-toggle>
+  <mat-button-toggle value="no">
+    <img
+      src="assets/images/languages/no-flag.png"
+      alt="NO"
+      class="flag-icon"
+      [class.selected-flag]="isSelected(LanguageEnum.NO)"
+    />
+  </mat-button-toggle>
+</mat-button-toggle-group>

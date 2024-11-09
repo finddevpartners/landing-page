@@ -1,0 +1,188 @@
+.contact-container-info {
+  display: flex;
+  /* background-color: #f0f6fb; */
+  justify-content: space-between;
+  align-items: center;
+  /* height: 800px; */
+  overflow: hidden;
+  padding: 20px;
+}
+
+.contact-container-info-text {
+  display: flex;
+  flex-direction: column;
+  /* width: 40%; */
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-container-info-header {
+  /* padding-top: 10rem; */
+  font-size: 32px;
+
+  span {
+    color: var(--main-color);
+  }
+}
+
+.social-media-icon {
+  color: var(--main-color);
+  width: 40px;
+  height: 4rem;
+}
+
+.contact-container-info-text-body {
+  /* padding-left: 5rem; */
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.contact-main-header {
+  font-weight: 700;
+  padding-top: 1rem;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+  font-size: 48px;
+}
+
+.contact-area-container {
+  padding-top: 5rem;
+}
+
+.contact-area-container-social-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 38px;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 4rem;
+  gap: 5rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.mat-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 85%;
+  padding-left: 5%;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+}
+
+.mat-mdc-form-field {
+  width: 100% !important;
+}
+
+.mat-mdc-card-content {
+  width: 100% !important;
+}
+
+.mat-mdc-card-actions {
+  align-self: center;
+  width: 100%;
+}
+
+.submit-button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #1ac4ff;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow:
+    rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0,
+    rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  /* margin: 2rem; */
+  outline: none;
+  overflow: hidden;
+  padding: 12px;
+  text-align: center;
+  text-transform: none;
+  width: 100%;
+  margin-right: 5%;
+  margin-bottom: 2rem;
+}
+
+.submit-button-invalid {
+  opacity: 0.3;
+  cursor: none;
+}
+
+.contact-info-container-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.contact-info-container-col-phone {
+  margin-bottom: 1rem;
+}
+
+.clear-btn {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 6px;
+  left: 93%;
+}
+
+/* CSS */
+
+.header {
+  height: 600px !important;
+}
+
+.flexer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.location-text {
+  max-width: 150px;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.m-top {
+  margin-top: 15rem;
+}
+
+.contact-us-container-main-image {
+  margin-top: -15%;
+  width: 70%;
+  margin-right: 5rem;
+}

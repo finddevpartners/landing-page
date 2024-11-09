@@ -1,0 +1,467 @@
+<div class="over-hidden">
+  <div class="slider-area position-relative home3 over-hidden home3 primary-bg">
+    <div
+      class="header single-slider d-flex align-items-center position-relative z-index11"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
+          >
+            <div class="slider-content position-relative z-index11">
+              <span class="f-700 theme-color d-block pb-1">{{
+                "APP.HOME.WELCOME" | translate
+              }}</span>
+              <h1 class="f-700 pb-22 pr-0">
+                {{ "APP.HOME.TRUSTED_PARTNER" | translate }}
+              </h1>
+              <p>
+                {{ "APP.HOME.TRANSFORMING_CHALLENGES" | translate }}
+              </p>
+              <div class="my-btn mt-47">
+                <a
+                  [routerLink]="['/about']"
+                  routerLinkActive="router-link-active"
+                  class="btn theme-bg text-capitalize f-18 f-700"
+                  >{{ "APP.HOME.ABOUT_US" | translate }}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center"
+          >
+            <div class="slider-img1 pl-65 z-index1 position-relative">
+              <video
+                #videoPlayer
+                class="video-main"
+                [loop]="true"
+                [muted]="true"
+                [volume]="0.2"
+                [autoplay]="true"
+              >
+                <source
+                  src="assets/videos/compressed-computer.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="intro-area home3 pt-30 pb-30">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12">
+          <div class="title text-center">
+            <h2 class="f-700">
+              {{ "APP.HOME.OUR_MISSION" | translate }}
+            </h2>
+            <p>
+              {{ "APP.HOME.OUR_MISSION_DESC" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row intro-wrapper justify-content-center pt-50">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+          <div
+            class="home3-single-intro-content findev-card position-relative over-hidden transition3 mt-10 pl-45 pt-85 pb-65 pr-45 mb-30"
+          >
+            <div
+              class="ser-icon d-inline-block z-index1 position-relative mb-32 transition5"
+            >
+              <mat-icon svgIcon="chart-upward" class="findev-icon"></mat-icon>
+            </div>
+            <div class="home3-intro-text">
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.EMPOWERING_GROWTH" | translate }}
+              </h3>
+              <p class="mb-2">
+                {{ "APP.HOME.EMPOWERING_GROWTH_DESC" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+          <div
+            class="home3-single-intro-content findev-card position-relative over-hidden transition5 mt-10 pl-45 pt-85 pb-65 pr-45 mb-30"
+          >
+            <div
+              class="ser-icon d-inline-block z-index1 position-relative mb-32 transition5"
+            >
+              <mat-icon svgIcon="light-bulb" class="findev-icon"></mat-icon>
+            </div>
+            <div class="home3-intro-text">
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.CLIENT_CENTRIC_APPROACH" | translate }}
+              </h3>
+              <p class="mb-2">
+                {{ "APP.HOME.CLIENT_CENTRIC_APPROACH_DESC" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+          <div
+            class="home3-single-intro-content findev-card position-relative over-hidden transition3 mt-10 pl-45 pt-85 pb-65 pr-45 mb-30"
+          >
+            <div
+              class="ser-icon d-inline-block z-index1 position-relative mb-32 transition5"
+            >
+              <mat-icon svgIcon="measuring-tape" class="findev-icon"></mat-icon>
+            </div>
+            <div class="home3-intro-text">
+              <h3 class="f-700 mb-25">
+                {{ "APP.HOME.CULTIVATING_EXCELLENCE" | translate }}
+              </h3>
+              <p class="mb-2">
+                {{ "APP.HOME.CULTIVATING_EXCELLENCE_DESC" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-area home3 position-relative over-hidden">
+    <div
+      class="home3-about-bg bg-no-repeat pt-125 pb-170"
+      data-background="assets/images/bg/home3-about-bg.png"
+    >
+      <div class="container">
+        <div class="row align-items-center pt-90">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="about-left-content mb-50">
+              <div class="title">
+                <span class="theme-color f-700">{{
+                  "APP.HOME.LEARN_MORE_ABOUT_US" | translate
+                }}</span>
+                <p class="pb-10">
+                  {{ "APP.HOME.LEARN_MORE_ABOUT_US_DESC" | translate }}
+                </p>
+              </div>
+              <div class="my-btn mt-47">
+                <a
+                  [routerLink]="['/about']"
+                  routerLinkActive="router-link-active"
+                  fragment="top"
+                  class="btn theme-bg text-capitalize f-18 f-700"
+                  >{{ "APP.HOME.VIEW_MORE" | translate }}</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div
+              class="home3-about-img-wrapper-margin mb-10 d-flex justify-content-end"
+            >
+              <div
+                class="home3-about-img bg-transparent tilt position-relative z-index11"
+              >
+                <img
+                  class="about-img1 position-absolute d-inline-block z-index1"
+                  src="assets/images/findev/learn-more-2.jpeg"
+                  alt="image"
+                />
+                <div
+                  class="home3-about-img-border bg-transparent z-index-1"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home3-service-area home3 position-relative mt-155">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10 col-12">
+          <div class="title text-center">
+            <h2 class="f-700">{{ "APP.HOME.OUR_SERVICES" | translate }}</h2>
+            <h4 class="secondary-color f-500 mt-20">
+              {{ "APP.HOME.OUR_SERVICES_DESC" | translate }}
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="home3-service-wrapper pt-105">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div
+              class="home3-single-service-content findev-card-service white-bg home3-single-service-border transition5 position-relative pt-60 pb-35 pl-45 pr-45 mb-80"
+            >
+              <div class="single-service d-lg-flex mb-20">
+                <div
+                  class="ser-icon d-inline-block text-center mr-30 mt-1 z-index1"
+                >
+                  <span class="primary-bg text-white d-block">
+                    <mat-icon svgIcon="rocket" class="findev-icon"></mat-icon>
+                  </span>
+                </div>
+                <div class="service-text z-index1">
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.CUSTOM_SOFTWARE_DEV" | translate }}
+                  </h5>
+                  <p class="mb-35">
+                    {{ "APP.HOME.CUSTOM_SOFTWARE_DEV_DESC" | translate }}
+                  </p>
+                  <a
+                    [routerLink]="['/software-service']"
+                    class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
+                  >
+                    {{ "APP.HOME.VIEW_SERVICE" | translate }}
+                    <span class="pl-2"
+                      ><i class="fal fa-long-arrow-right"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div
+              class="home3-single-service-content white-bg findev-card-service home3-single-service-border transition5 position-relative pt-60 pb-35 pl-45 pr-45 mb-80"
+            >
+              <div class="single-service d-lg-flex mb-20">
+                <div
+                  class="ser-icon d-inline-block text-center mr-30 mt-1 z-index1"
+                >
+                  <span class="primary-bg text-white d-block">
+                    <mat-icon class="findev-icon" svgIcon="mobile"></mat-icon>
+                  </span>
+                </div>
+                <div class="service-text z-index1">
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.MOBILE_APP_DEV" | translate }}
+                  </h5>
+                  <p class="mb-35">
+                    {{ "APP.HOME.MOBILE_APP_DEV_DESC" | translate }}
+                  </p>
+                  <a
+                    [routerLink]="['/software-service']"
+                    class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
+                    <span class="pl-2"
+                      ><i class="fal fa-long-arrow-right"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div
+              class="home3-single-service-content findev-card-service white-bg home3-single-service-border transition5 position-relative pt-60 pb-35 pl-45 pr-45 mb-80"
+            >
+              <div class="single-service d-lg-flex mb-20">
+                <div
+                  class="ser-icon d-inline-block text-center mr-30 mt-1 z-index1"
+                >
+                  <span class="primary-bg text-white d-block">
+                    <mat-icon class="findev-icon" svgIcon="web"></mat-icon>
+                  </span>
+                </div>
+                <div class="service-text z-index1">
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.WEB_APP_DEV" | translate }}
+                  </h5>
+                  <p class="mb-35">
+                    {{ "APP.HOME.WEB_APP_DEV_DESC" | translate }}
+                  </p>
+                  <a
+                    [routerLink]="['/software-service']"
+                    class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
+                    <span class="pl-2"
+                      ><i class="fal fa-long-arrow-right"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div
+              class="home3-single-service-content findev-card-service white-bg position-relative home3-single-service-border transition5 pt-60 pb-35 pl-45 pr-45 mb-80"
+            >
+              <div class="single-service d-lg-flex mb-20">
+                <div
+                  class="ser-icon d-inline-block text-center mr-30 mt-1 z-index1"
+                >
+                  <span class="primary-bg text-white d-block">
+                    <mat-icon
+                      class="findev-icon"
+                      svgIcon="cloud_main"
+                    ></mat-icon>
+                  </span>
+                </div>
+                <div class="service-text z-index1">
+                  <h5 class="f-700 pb-15">
+                    {{ "APP.HOME.CLOUD_STRATEGY" | translate }}
+                  </h5>
+                  <p class="mb-35">
+                    {{ "APP.HOME.CLOUD_SERVICE_DESC" | translate }}
+                  </p>
+                  <a
+                    [routerLink]="['/cloud-service']"
+                    class="black-color d-inline-block theme-hover position-relative f-700 text-capitalize"
+                    >{{ "APP.HOME.VIEW_SERVICE" | translate }}
+                    <span class="pl-2"
+                      ><i class="fal fa-long-arrow-right"></i
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home3-facts-area mt-100">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-10 col-12">
+          <div class="title text-center">
+            <h3 class="f-700 pb-30">
+              {{ "APP.HOME.YEARS_OF_EXPERIENCE" | translate }}
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row home3-facts-wrapper mt-70">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div
+            class="home3-single-facts primary-bg text-center pt-70 pb-80 mb-30"
+          >
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="f-700 d-inline-block">7</span>
+              <span class="per d-inline-block f-700">+</span>
+            </div>
+            <p class="black-color text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.YEARS" | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div
+            class="home3-single-facts theme-bg text-center pt-70 pb-80 mb-30 mt-60"
+          >
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="text-white f-700 d-inline-block">18</span>
+              <span class="per text-white d-inline-block f-700">+</span>
+            </div>
+            <p class="text-white text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.IN_HOUSE_PROJECTS" | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div
+            class="home3-single-facts primary-bg text-center pt-70 pb-80 mb-30"
+          >
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="f-700 d-inline-block">50</span>
+              <span class="d-inline-block f-700">+</span>
+            </div>
+            <p class="black-color text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.CUSTOMERS" | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div
+            class="home3-single-facts theme-bg text-center pt-70 pb-80 mb-30 mt-60"
+          >
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="text-white f-700 d-inline-block">98</span>
+              <span class="per text-white d-inline-block f-700">%</span>
+            </div>
+            <p class="text-white text-center f-700 mb-0 mt-1">
+              {{ "APP.HOME.CUSTOMERS_SATISFACTION" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partner-area pt-100 pb-80 over-hidden">
+    <div class="container">
+      <div class="row align-items-start justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-12">
+          <div class="title text-center">
+            <h3 class="f-700 mb-30">
+              {{ "APP.HOME.TRUSTED_PARTNERS" | translate }}
+            </h3>
+            <p class="pb-10">
+              {{ "APP.HOME.TRUSTED_PARTNERS_DESC" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row partner-wrapper pt-60 align-items-start">
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/vittoria.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/khymeia.jpeg" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/fiera.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/pmed.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/nobis.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/wide.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/agrotime.png" alt="image" />
+          </div>
+        </div>
+        <div
+          class="single-partner-parent col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12"
+        >
+          <div class="single-partner text-center mb-60">
+            <img src="assets/images/findev/krociere.jpeg" alt="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
