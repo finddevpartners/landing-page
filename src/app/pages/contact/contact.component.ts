@@ -59,7 +59,7 @@ export class ContactComponent {
     message: this.fb.control("", {
       validators: [
         Validators.required,
-        Validators.minLength(5),
+        Validators.minLength(50),
         Validators.maxLength(2056),
       ],
     }),
