@@ -62,13 +62,12 @@ export class AppComponent implements OnInit {
     { path: "contact", title: "APP.TABS.CONTACT" },
   ];
   serviceTabs: Tab[] = [
+    { path: "ai-service", title: "APP.SERVICE_TABS.AI_SERVICE" },
+    { path: "software-service", title: "APP.SERVICE_TABS.SOFTWARE_SERVICE" },
     {
       path: "consultancy-service",
       title: "APP.SERVICE_TABS.CONSULTANCY_SERVICE",
     },
-    { path: "software-service", title: "APP.SERVICE_TABS.SOFTWARE_SERVICE" },
-    { path: "cloud-service", title: "APP.SERVICE_TABS.CLOUD_SERVICE" },
-    { path: "ai-service", title: "APP.SERVICE_TABS.AI_SERVICE" },
   ];
   constructor(
     private regIcon: RegisterIconService,
