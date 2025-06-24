@@ -1,0 +1,132 @@
+.findev-icon {
+  width: 70px !important;
+  height: 70px !important;
+  fill: var(--main-color) !important;
+}
+
+.findev-icon-sm {
+  width: 50px !important;
+  height: 50px !important;
+  fill: var(--main-color) !important;
+}
+
+.mat-card-container {
+  padding: 20px !important;
+  margin: 10px !important;
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 3px rgba(26, 196, 255, 0.4) !important;
+}
+
+.mat-card-header,
+.mat-card-content {
+  padding: 10px !important;
+}
+
+.mat-card-title {
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+
+.mat-card-content {
+  color: #333 !important;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.mat-card-container-md {
+  max-width: 800px;
+  min-height: 330px;
+}
+
+.mat-card-container-sm {
+  max-width: 800px;
+  min-height: 280px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  h3 {
+    font-weight: 600;
+    padding-top: 2rem;
+    color: #000;
+    font-size: 26px;
+  }
+}
+
+.main-section-container.why-us {
+  margin-top: 2rem;
+}
+
+.mat-card-header {
+  margin: 0 auto;
+  font-size: 38px;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-header-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 1200px;
+  max-width: 2400px;
+  gap: 5rem;
+}
+
+.main-header-section-description {
+  display: flex;
+  width: 65%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+
+.mat-card-title {
+  margin: 0 auto !important;
+}
+
+.max-w {
+  max-width: 4800px;
+}
+
+.secondary-bg {
+  background-color: rgba(172, 222, 220, 0.12);
+  max-width: 4800px;
+}
+
+.card-padding {
+  margin: 8px;
+}
+
+.service-page-title {
+  padding-top: 5%;
+  font-weight: 700;
+  width: 70%;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--main-color);
+  text-align: center;
+}
